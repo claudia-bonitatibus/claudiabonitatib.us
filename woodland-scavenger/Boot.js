@@ -1,7 +1,8 @@
 var gameObj = {
   // Global variables are decleared here!
-  gScore: 3770,
-  gTime: "00:00"
+  gScore: 0,
+  gTime: "02:00",
+  gHealth: 5
 };
 
 gameObj.Boot = function (game) {};

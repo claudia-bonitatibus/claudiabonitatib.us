@@ -16,7 +16,7 @@ gameObj.Lose.prototype = {
 	txLose.font = 'Caveat Brush';
 	txLose.rotation = .17;
 
-	var scoreStr = '1200 POINTS';
+	var scoreStr = gameObj.gScore + "  POINTS";
 	var txScore = this.add.text(530, 355, scoreStr);
 	txScore.fill = '#323232';
 	txScore.alpha = .80;
@@ -25,7 +25,7 @@ gameObj.Lose.prototype = {
 	txScore.font = 'Caveat Brush';
 	txScore.rotation = .17;
 
-	var timeStr = 'FINAL TIME 2:00';
+	var timeStr = "FINAL TIME  " + gameObj.gTime;
 	var txTime = this.add.text(530, 405, timeStr);
 	txTime.fill = '#323232';
 	txTime.alpha = .80;
