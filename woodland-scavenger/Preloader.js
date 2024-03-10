@@ -6,7 +6,7 @@ gameObj.Preloader.prototype = {
     this.stage.backgroundColor='#333';
 
     // Progres bar animation
-    this.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js');
+
     this.preloadBg = this.add. sprite((960-297)/2, (720-145)/2, 'preloaderBg');
     this.preloadBar = this.add. sprite((960-158)/2, (720-50)/2, 'preloaderBar');
     this.load.setPreloadSprite(this.preloadBar);
@@ -29,7 +29,6 @@ gameObj.Preloader.prototype = {
 
     this.load.spritesheet('winButton', 'assets/btn_win.png', 70, 70);
     this.load.spritesheet('loseButton', 'assets/btn_lose.png', 70, 70);
-    this.load.spritesheet('pointsButton', 'assets/btn_points.png', 70, 70);
 
     this.load.image('win-background', 'assets/win-background.png');
     this.load.image('boncl', 'assets/win-mascot.png');
@@ -37,14 +36,6 @@ gameObj.Preloader.prototype = {
 
     this.load.image('lose-background', 'assets/lose-background.png');
     this.load.spritesheet('lose-playButton', 'assets/lose-play.png', 245, 235);
-
-    this.load.audio('beetlePoints', 'assets/collide-beetle.wav');
-
-   this.load.audio('winEffect', 'assets/win-effect.wav');
-
-   this.load.audio('loseHealth', 'assets/collide-predator.mp3');
-   
-   this.load.audio('loseEffect', 'assets/lose-effect.wav');
   },
   create: function () {
   	this.state.start('Main');
